@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+	    
+	    document.write("<br>");
+	    document.write("<br>");        
+}
+
+	function mostra(frase){
+		
+		document.write(frase)
+		pulaLinha();
+	}
+
+	function calculaIgg(IgG) {
+
+		return resultado / (altura * altura);
+		
+	}
+
+function calculaIgm(IgM) {
+
+		return resultado / (altura * altura);
+		
+	}
+var nome = prompt("Informe o seu nome");
+var Igg = prompt(nome + "informe o valor em UA/mL do IgM apresentado no laudo.");
+var calculaIgm = prompt(nome + "informe o valor em UA/mL do IgG apresentado no laudo.");
+
+var imc = calculaImc(alturaInformada, pesoInformado);
+
+document.write(nome + ", o seu IMC é " + imc);
+
+</script>

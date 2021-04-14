@@ -1,0 +1,202 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header  {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+/* o que foi feito no nav a: transformamos todo o texto em maiusc., pintamos de preto, deixamos com peso em negrito, aumentamos o tam da fonte e tiramos a declaração padrao de sublinhado.
+*/
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+/* p/ mapear o padrão de comportamento, qdo o mouse está em cima do elemento. Quero mapear o comportamento dos links que estão dentro do menu de navegação, então uso nav a:hover. IMPORTANTE!! A TAG hover É ADICIONADA SEMPRE APÓS O ITEM Q QUEREMOS IMPACTAR.
+*/
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+/* (hover - quando o usuário passa o cursor sobre o elemento, no ex abaixo eu troco a cor dos itens dos produtos)
+*/
+.produtos li:hover {
+    border-color: #c78c19;
+}
+/* ACTIVE quando um elemento está sendo ativado pelo usuário (click). Ex abaixo, qdo clicar na lista de produtos, vai mudar a cor da borda
+*/
+.produtos li:active {
+    border-color: #088C19;
+}
+/* para alterar o tam da fonte qdo o mouse estiver por cima do “li” dos produtos, ele tenha o tamanho de fonte de 40 pixels.
+*/
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.produto-descrição {
+    font-size: 18px;
+}
+.produto-preço {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;
+}
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrão{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px; /*propriedade devo alterar para que os meus <input> tenham um espaço entre a borda e o conteúdo*/
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%; /*aumentar a largura do botao*/
+    padding: 15px 0;/*aumenta o espaçamento interno 15px pra cima e pra baixo e zero p os lados*/
+    background: orange; /*cor de fundo laranja*/
+    color: white; /*cor do texto*/
+    font-weight: bold; /*fonte em negrito*/
+    font-size: 18px; /*aumenta o tamanho da fonte*/
+    border: none; /*tira a borda padrão*/
+    border-radius: 5px; /*canto arredondado*/
+    transition: 1s all; /* transição de cor de todos os elementos qdo o mouse passar por cima*/
+    cursor: pointer; /*sempre q o mouse estiver por cima do meu elemento, o cursor será a mãozinha*/
+}
+
+.enviar:hover{ /*pra mudar a cor qdo o mouse está por cima*/
+    background: darkorange;
+    /*transform: scale(1.2);quando eu colocar o cursor em cima do mouse, aumenta meu botão em 20%*/
+    transform: rotate(70deg) scale(1.2); /*No CSS a leitura é sempre feita de cima para baixo. O último item sobrescreve o anterior, então aqui, como temos duas propriedades iguais, a última que vai ser lida. Essa aqui vai ser lida e vai ser ignorada. P/ somar as 2 propriedades no transform, adiciono 1 depois da outra*/
+}
+
+table { /*ref p/ tag da tabela*/
+    margin: 20px 0 40px; /*espaçamento interno 20px p/ cima e 40 pra baixo*/
+
+}
+
+thead { /*mudar a cor do cabeçalho*/
+    background: #555555; /*fundo cinza*/
+    color: white; /*fonte branca*/
+    font-weight: bold; /*fonte negrito*/
+}
+
+td, th { /*alterando estilo da tabela*/
+    border: 1px solid #000000; /*borda*/
+    padding: 8px 15px; /*espaçamento da borda: lateral 15 px e 8 pra cima e pra baixo*/      
+}
+/*css da página inicial*/
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left; /*limpa o float posicionado a esq e cria uma "barreira" delimitando o alcance na página. */
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold; 
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0; /*0 cima, 20 dir, 20 baixo, 0 esq */
+}
+
+.imagembeneficios {
+    width: 60%;
+}
+
+.mapa {
+    padding: 3em; /* espaçamento interno: 3em (cima e embaixo) e 0 p/as laterais*/
+}
+
+.mapa p {
+    margin: 0 0 2em; /*espaçamento externo (margem) para baixo de 2em*/
+    text-align: center;
+}
+
+.video {
+    width: 560px;
+    margin: 1em auto;/*1em cima e baixo e automatica nas laterais*/
+}
+
+
+
+    
