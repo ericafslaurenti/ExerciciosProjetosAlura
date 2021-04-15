@@ -20,8 +20,8 @@ nav li {
     display: inline;
     margin: 0 0 0 15px;
 }
-/* o que foi feito no nav a: transformamos todo o texto em maiusc., pintamos de preto, deixamos com peso em negrito, aumentamos o tam da fonte e tiramos a declaração padrao de sublinhado.
-*/
+/* o que foi feito no nav a: transformamos todo o texto em maiusc., pintamos de preto, 
+deixamos com peso em negrito, aumentamos o tam da fonte e tiramos a declaração padrao de sublinhado*/
 nav a {
     text-transform: uppercase;
     color: #000000;
@@ -29,7 +29,9 @@ nav a {
     font-size: 22px;
     text-decoration: none;
 }
-/* p/ mapear o padrão de comportamento, qdo o mouse está em cima do elemento. Quero mapear o comportamento dos links que estão dentro do menu de navegação, então uso nav a:hover. IMPORTANTE!! A TAG hover É ADICIONADA SEMPRE APÓS O ITEM Q QUEREMOS IMPACTAR.
+/* p/ mapear o padrão de comportamento, qdo o mouse está em cima do elemento.
+Quero mapear o comportamento dos links que estão dentro do menu de navegação, então uso nav a:hover. 
+IMPORTANTE!! A TAG hover É ADICIONADA SEMPRE APÓS O ITEM Q QUEREMOS IMPACTAR.
 */
 nav a:hover {
     color: #c78c19;
@@ -51,17 +53,20 @@ nav a:hover {
     border: 2px solid #000000;
     border-radius: 10px;
 }
-/* (hover - quando o usuário passa o cursor sobre o elemento, no ex abaixo eu troco a cor dos itens dos produtos)
+/* (hover - quando o usuário passa o cursor sobre o elemento, no ex abaixo eu troco a cor dos itens
+dos produtos)
 */
 .produtos li:hover {
     border-color: #c78c19;
 }
-/* ACTIVE quando um elemento está sendo ativado pelo usuário (click). Ex abaixo, qdo clicar na lista de produtos, vai mudar a cor da borda
+/* ACTIVE quando um elemento está sendo ativado pelo usuário (click). Ex abaixo, qdo clicar na lista 
+de produtos, vai mudar a cor da borda
 */
 .produtos li:active {
     border-color: #088C19;
 }
-/* para alterar o tam da fonte qdo o mouse estiver por cima do “li” dos produtos, ele tenha o tamanho de fonte de 40 pixels.
+/* para alterar o tam da fonte qdo o mouse estiver por cima do “li” dos produtos, 
+ele tenha o tamanho de fonte de 40 pixels.
 */
 .produtos li:hover h2 {
     font-size: 34px;
@@ -126,7 +131,10 @@ form label, form legend{
 .enviar:hover{ /*pra mudar a cor qdo o mouse está por cima*/
     background: darkorange;
     /*transform: scale(1.2);quando eu colocar o cursor em cima do mouse, aumenta meu botão em 20%*/
-    transform: rotate(70deg) scale(1.2); /*No CSS a leitura é sempre feita de cima para baixo. O último item sobrescreve o anterior, então aqui, como temos duas propriedades iguais, a última que vai ser lida. Essa aqui vai ser lida e vai ser ignorada. P/ somar as 2 propriedades no transform, adiciono 1 depois da outra*/
+    transform: rotate(70deg) scale(1.2); /*No CSS a leitura é sempre feita de cima para baixo. O último 
+    item sobrescreve o anterior, então aqui, como temos duas propriedades iguais, a última que vai ser lida. 
+    Essa aqui vai ser lida e vai ser ignorada. P/ somar as 2 propriedades no transform, adiciono 1 depois da 
+    outra*/
 }
 
 table { /*ref p/ tag da tabela*/
@@ -263,19 +271,25 @@ ficaria com o backgroud laranja.
 }
 */
 @media screen and (max-width: 480px){
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos, .copyright {
         width: auto;
     }
-    h1 {
+
+    h1, .produto-descrição, .produto-preço {
         text-align: center;
     }
+
     nav {
         position: static;
     }
-    .lista-beneficios, .imagem-beneficios {
+
+    .lista-beneficios, .imagem-beneficios, .imagem {
         width: 100%;
     }
-} /*@media valor and (pesquisa) */
-/*adapta o css p/ funcionar na tela do celular
+
+    
+
+/*@media valor and (pesquisa)
+adapta o css p/ funcionar na tela do celular
 entregar pra telas de até 480px um estilo diferente (medias querys) - pergunta ao navegador o tamanho da tela*/
     
